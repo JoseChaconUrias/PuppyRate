@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puppy Rate</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="greeting">Welcome To Puppy Rate</h1>
+    <h2 class="greeting-sub">A safe place to rate the dogs you've babysat!</h2>
+    <img class="pixel" src="img/dog-pixel.gif" height="100" width="100"/>
+
+    <section class="dog-container">
+      <div class="dogs">
+        <img src="img/dog.jpg" height=400" width="500" />
+        <h2>Pablo <span class="negative-tag">negative</span></h2>
+
+        <div class="review-container">
+          <h3>Reviews</h3>
+          <ul>
+            <li><span class="username">user123:</span> Pablo was a nightmare to take care of!!!</li>
+            <li><span class="username">user456:</span> Pablo killed my youngest daughter >:(</li>
+            <li><span class="username">user789:</span> Pretty chill ig</li>
+          </ul>
+        </div>
+        <button class="openModal">Leave Feedback</button>
+      </div>
+      <div class="dogs">
+        <img src="img/kung-pao.jpg" height="400" width="500" />
+        <h2>Kung Pao Chicken <span class="good-tag">good</span></h2>
+        <div class="review-container">
+          <h3>Reviews</h3>
+          <ul>
+            <li><span class="username">user111:</span> He lives up to the name</li>
+            <li><span class="username">user212:</span> Very good boy. Would take care of again</li>
+            <li><span class="username">user313:</span> Man this dog can put down a plate of kung pao chicken</li>
+          </ul>
+        </div>
+        <button class="openModal">Leave Feedback</button>
+      </div>
+      <div class="dogs">
+        <img src="img/good-boy.jpg" height="400" width="500" />
+        <h2>Oreo <span class="excellent-tag">excellent</span></h2>
+        <div class="review-container">
+          <h3>Reviews</h3>
+          <ul>
+            <li><span class="username">user402:</span> Well behaved dog. He is very kind and sweet</li>
+            <li><span class="username">user109:</span> Very good with kids. 5 stars would recommend</li>
+            <li><span class="username">user552:</span> Best cuddler because he's so lovie</li>
+          </ul>
+        </div>
+        <button class="openModal">Leave Feedback</button>
+      </div>
+      <div class="dogs">
+        <img src="img/d.jpg" height="400" width="500" />
+        <h2>bfewl <span class="excellent-tag">excellent</span></h2>
+        <div class="review-container">
+          <h3>Reviews</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit elit. Provident, exercitationem?</li>
+          </ul>
+        </div>
+        <button class="openModal">Leave Feedback</button>
+      </div>
+    </section>
+    <div id="feedbackModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Leave Your Feedback</h2>
+        <textarea
+          id="feedbackText"
+          placeholder="Write your feedback here..."
+        ></textarea>
+
+        <div class="stars">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <button id="submitFeedback" class="feedback-button">Submit</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
