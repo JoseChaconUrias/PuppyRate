@@ -1,7 +1,46 @@
+/* FULL SCREEN */
+
 body {
   font-family: Arial;
   background-color: rgb(240, 240, 240);
   padding: 4rem;
+}
+
+.home-icon {
+  height: 2rem;
+  width: 2rem;
+  overflow: visible;
+}
+
+.nav-bar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem;
+  outline-style: solid;
+  outline-color: rgb(142, 142, 142);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 5.5em;
+}
+
+.search-bar {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 30rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.search-icon {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  overflow: visible;
 }
 
 .greeting {
@@ -22,9 +61,9 @@ body {
 }
 
 .pixel {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dog-container {
@@ -32,64 +71,70 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
-  background-color: white;
-  padding: 4rem;
-  margin-left: 20rem;
-  margin-right: 20rem;
+
   border-radius: 1rem;
+  box-sizing: border-box;
 }
 
 .dogs {
-  margin-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-color: white;
+  width: 40rem;
+  border-radius: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.dog-image {
+  max-width: 600px;
+  max-height: 500px;
+  width: 100%;
+  border-radius: .5rem;
 }
 
 .negative-tag {
   background-color: red;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   font-size: 10px;
   color: white;
 }
 
 .good-tag {
-    background-color: lightgreen;
-    padding: .5rem;
-    border-radius: 1rem;
-    font-size: 10px;
-    color: white;
+  background-color: lightgreen;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 10px;
+  color: white;
 }
 
 .excellent-tag {
-    background-color: green;
-    padding: .5rem;
-    border-radius: 1rem;
-    font-size: 10px;
-    color: white;
+  background-color: green;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 10px;
+  color: white;
 }
 
-img {
-  border-radius: 1rem;
-}
 
 .username {
-    font-weight: bold;
-    color: rgb(84, 84, 84);
-}
-.review-container {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  font-weight: bold;
+  color: rgb(84, 84, 84);
 }
 
 .openModal {
-    padding: 10px 20px;
-    width: 10rem;
-    background: blue;
-    color: white;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    margin: auto;
-    margin-top: 2rem;
+  padding: 10px 20px;
+  width: 10rem;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 .modal {
@@ -112,9 +157,9 @@ img {
   width: 300px;
   text-align: center;
   position: relative;
-  margin-left:auto;
-  margin-right:auto;
-
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20rem;
 }
 
 .close {
@@ -168,4 +213,41 @@ textarea {
   height: 100px;
   width: 300px;
   resize: none;
+}
+
+/* PHONE SCREEN */
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .nav-bar {
+    top: auto;
+    bottom: 0;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .search-icon {
+    display: block;
+  }
+
+  .dog-container {
+    padding: 2rem;
+    width: 95%;
+  }
+
+  .dogs {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%
+  }
+
+  .dog-image {
+    border-radius: 0;
+  }
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="display:flex; justify-content: center">
+    <header class="nav-bar">
+        <a href="/index.html">
+            <img src="img/icons/home-lightmode.png" class="home-icon" width="100" height="100" />
+        </a>
+        <input placeholder="Search" class="search-bar" />
+        <img src="img/icons/search-lightmode.png" class="search-icon" width="100" height="100" />
+    </header>
+    <div class="dogs">
+        <img src="img/dog.jpg" class="dog-image" height=400" width="500" />
+        <h2>Pablo <span class="negative-tag">negative</span></h2>
+        <div>
+          <h3>Reviews</h3>
+          <ul>
+            <li><span class="username">user123:</span> Pablo was a nightmare to take care of!!!</li>
+            <li><span class="username">user456:</span> Pablo killed my youngest daughter >:(</li>
+            <li><span class="username">user789:</span> Pretty chill ig</li>
+          </ul>
+        </div>
+        <button class="openModal">Leave Feedback</button>
+      </div>
+      <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h2>Leave Your Feedback</h2>
+          <textarea
+            id="feedbackText"
+            placeholder="Write your feedback here..."
+          ></textarea>
+  
+          <div class="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+          <button id="submitFeedback" class="feedback-button">Submit</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
